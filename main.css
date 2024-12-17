@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin";
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+main .text h1 {
+  font-size: 30px;
+}
+main .text h3 {
+  font-weight: normal;
+  margin-bottom: 0;
+  color: hsl(0, 0%, 59%);
+  font-size: 40px;
+}
+main .text p {
+  margin: 10px 0 20px;
+  font-size: 18px;
+  color: hsl(209, 33%, 12%);
+}
+main .text form {
+  margin-bottom: 50px;
+  position: relative;
+}
+main .text form input[name="email"] {
+  border: 2px solid hsl(0, 0%, 59%);
+  padding: 10px 25px;
+  height: 40px;
+  border-radius: 18px;
+  width: 350px;
+  outline: none;
+}
+main .text form input[type="submit"] {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 18px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-weight: 600;
+  background-color: hsl(223, 87%, 63%);
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 hsl(223, 87%, 63%);
+}
+main .text form small {
+  margin: 5px 0 0 10px;
+  text-align: left;
+  display: block;
+  opacity: 0;
+  color: hsl(354, 100%, 66%);
+  font-size: 14px;
+}
+
+main .input.error input[name="email"] {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+main .input.error + small {
+  opacity: 1;
+}
+
+@media (width<=450px) {
+  main {
+    padding: 20px;
+  }
+  main .text h1 {
+    font-size: 25;
+  }
+  main .text h3 {
+    font-size: 32px;
+  }
+  main .text p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  main .text form input[name="email"] {
+    margin-bottom: 40px;
+  }
+  main .text form input[type="submit"] {
+    width: 350px;
+  }
+  main .text form small {
+    position: absolute;
+    bottom: 55px;
+    left: 60px;
+    margin: 0;
+  }
+}
+main .image img {
+  width: 550px;
+}
+
+main .contact {
+  margin-top: 60px;
+}
+main .contact i {
+  color: hsl(223, 87%, 63%);
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid hsl(0, 13%, 95%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .contact i:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+main > p {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (width<=450px) {
+  main .image img {
+    width: 400px;
+    margin-bottom: 100px;
+  }
+
+  main .contact i {
+    color: hsl(223, 87%, 63%);
+    margin-left: 10px;
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid hsl(0, 13%, 95%);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  main .contact i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+  }
+  main > p {
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+  }
+}
